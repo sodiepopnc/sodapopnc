@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,12 +27,40 @@
       position: relative;
       overflow-x: hidden;
     }
+    .bubble-container {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+    }
+    .bubble {
+      position: absolute;
+      bottom: -100px;
+      width: 40px;
+      height: 40px;
+      background-color: rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+      animation: rise 10s infinite ease-in;
+      opacity: 0.6;
+    }
+    @keyframes rise {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 0.4;
+      }
+      100% {
+        transform: translateY(-110vh) scale(0.5);
+        opacity: 0;
+      }
+    }
     header {
       background-color: var(--teal);
       text-align: center;
       padding: 60px 20px 40px;
       color: white;
       position: relative;
+      z-index: 1;
     }
     header h1 {
       font-family: 'Pacifico', cursive;
@@ -46,6 +75,8 @@
       background-color: var(--dark-teal);
       text-align: center;
       padding: 15px;
+      position: relative;
+      z-index: 1;
     }
     nav a {
       color: white;
@@ -64,6 +95,8 @@
       max-width: 1000px;
       margin: auto;
       text-align: center;
+      position: relative;
+      z-index: 1;
     }
     section h2 {
       font-family: 'Pacifico', cursive;
@@ -77,20 +110,14 @@
       text-align: center;
       padding: 30px 20px;
       font-size: 0.9rem;
+      position: relative;
+      z-index: 1;
     }
     .menu-section {
       background: var(--cream);
       padding: 40px 20px;
       margin: 30px auto;
       border-radius: 10px;
-    }
-    .bubbles {
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background-image: url('https://www.transparenttextures.com/patterns/bubbles.png');
-      opacity: 0.05;
-      pointer-events: none;
-      z-index: 0;
     }
     .button-link {
       display: inline-block;
@@ -109,12 +136,17 @@
 </head>
 <body>
 
-<div class="bubbles"></div>
+<div class="bubble-container">
+  <div class="bubble" style="left: 10%; animation-delay: 0s;"></div>
+  <div class="bubble" style="left: 25%; animation-delay: 2s;"></div>
+  <div class="bubble" style="left: 40%; animation-delay: 4s;"></div>
+  <div class="bubble" style="left: 55%; animation-delay: 1.5s;"></div>
+  <div class="bubble" style="left: 70%; animation-delay: 3.5s;"></div>
+  <div class="bubble" style="left: 85%; animation-delay: 5.5s;"></div>
+</div>
 
 <header>
-  <!-- Logo -->
   <img src="Image.png" alt="Sodie Pop logo" style="max-height: 120px; margin-bottom: 20px;" />
-  
   <h1>🍒 Sodie Pop</h1>
   <p>Greensboro, NC · Sip Pretty. Fizz Often.</p>
 </header>
@@ -135,7 +167,6 @@
   <h2>Fizz Menu</h2>
   <div class="menu-item">Big Pop (24oz) – $6.00</div>
   <div class="menu-item">Energy Fizz – $8.00</div>
-  <p style="margin-top:15px; font-size:0.9rem;"></p>
 </section>
 
 <section id="follow">
@@ -156,10 +187,7 @@
 
 <!-- Hidden developer notes -->
 <div class="hidden-notes">
-  <!-- PHOTO GALLERY PLACEHOLDER: Insert PublicAlbum or other embed here when ready -->
-  <!-- FACEBOOK WIDGET PLACEHOLDER: Replace Facebook button with plugin code when needed -->
-  <!-- SOCIAL/VIDEO EMBEDS: You can insert TikTok/Twitter here -->
-  <!-- <div class="menu-item">Small Fizz – $4.00</div> -->
+  <!-- Future embeds or widgets go here -->
 </div>
 
 </body>
