@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sodie Pop – Greensboro, NC</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --main-pink: #ef476f;
+      --cream: #fff6ec;
+      --teal: #60c6d2;
+      --dark-teal: #2a7f8e;
+      --bubble-bg: #b2ebf2;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Nunito', sans-serif;
+      background-color: var(--bubble-bg);
+      color: #333;
+      line-height: 1.6;
+      position: relative;
+      overflow-x: hidden;
+    }
+    header {
+      background-color: var(--teal);
+      text-align: center;
+      padding: 60px 20px 40px;
+      color: white;
+      position: relative;
+    }
+    header h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 3.5rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+      font-style: italic;
+    }
+    nav {
+      background-color: var(--dark-teal);
+      text-align: center;
+      padding: 15px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: var(--main-pink);
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+    section h2 {
+      font-family: 'Pacifico', cursive;
+      color: var(--main-pink);
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+    }
+    footer {
+      background-color: var(--teal);
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.9rem;
+    }
+    .menu-section {
+      background: var(--cream);
+      padding: 40px 20px;
+      margin: 30px auto;
+      border-radius: 10px;
+    }
+    .bubbles {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-image: url('https://www.transparenttextures.com/patterns/bubbles.png');
+      opacity: 0.05;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .button-link {
+      display: inline-block;
+      background-color: #ef476f;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 15px 10px;
+    }
+    .hidden-notes {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<div class="bubbles"></div>
+
+<header>
+  <h1>🍒 Sodie Pop</h1>
+  <p>Greensboro, NC · Sip Pretty. Fizz Often.</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#menu">Fizz Menu</a>
+  <a href="#follow">Follow</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About</h2>
+  <p>Sodie Pop is a Greensboro-based fizzy twist on the classics. We bring retro cool back — with a punch of fruity flavor and a whole lotta flair. Every sip brings you closer to your happy place.</p>
+</section>
+
+<section id="menu" class="menu-section">
+  <h2>Fizz Menu</h2>
+  <div class="menu-item">Big Pop (24oz) – $6.00</div>
+  <div class="menu-item">Energy Fizz – $8.00</div>
+  <p style="margin-top:15px; font-size:0.9rem;"></p>
+</section>
+
+<section id="follow">
+  <h2>Follow Us</h2>
+  <a class="button-link" href="https://www.instagram.com/sodiepopnc" target="_blank">📸 Follow us on Instagram</a>
+  <a class="button-link" href="https://www.facebook.com/sodiepopnc" target="_blank">👍 Visit our Facebook Page</a>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Got flavor ideas or feedback? We’d love to hear from you.</p>
+  <p>Email us at <a href="mailto:hello@sodiepopnc.com">hello@sodiepopnc.com</a></p>
+</section>
+
+<footer>
+  &copy; 2025 Sodie Pop · Greensboro, NC · Made with 💖 and bubbles · <a href="https://sodiepopnc.com" style="color:white;">sodiepopnc.com</a>
+</footer>
+
+<!-- Hidden developer notes -->
+<div class="hidden-notes">
+  <!-- PHOTO GALLERY PLACEHOLDER: Insert PublicAlbum or other embed here when ready -->
+  <!-- FACEBOOK WIDGET PLACEHOLDER: Replace Facebook button with plugin code when needed -->
+  <!-- SOCIAL/VIDEO EMBEDS: You can insert TikTok/Twitter here -->
+  <!-- <div class="menu-item">Small Fizz – $4.00</div> -->
+</div>
+
+</body>
+</html>
