@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sodie Pop – Greensboro, NC</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -113,11 +114,12 @@
       position: relative;
       z-index: 1;
     }
-    .menu-section {
+    .menu-section, .facebook-widget {
       background: var(--cream);
       padding: 40px 20px;
       margin: 30px auto;
-      border-radius: 10px;
+      border-radius: 20px;
+      border: 6px dotted rgba(255, 255, 255, 0.6);
     }
     .button-link {
       display: inline-block;
@@ -149,7 +151,6 @@
   <img src="Image.png" alt="Sodie Pop logo" style="max-height: 120px; margin-bottom: 20px;" />
   <h1>🍒 Sodie Pop</h1>
   <p>Greensboro, NC · Sip Pretty. Fizz Often.</p>
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
 </header>
 
 <nav>
@@ -185,13 +186,12 @@
   </script>
 </section>
 
-<!-- Facebook Page Plugin -->
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous"
-  src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0">
-</script>
+<div class="facebook-widget" style="text-align: center;">
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0">
+  </script>
 
-<div style="text-align: center; margin-top: 20px;">
   <div class="fb-page"
     data-href="https://www.facebook.com/sodiepopnc"
     data-tabs="timeline"
@@ -203,8 +203,6 @@
     data-show-facepile="true">
   </div>
 </div>
-
-
 
 <section id="contact">
   <h2>Contact</h2>
