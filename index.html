@@ -89,7 +89,6 @@
       padding: 40px 20px;
       margin: 30px auto;
       border-radius: 20px;
-      border: 6px dotted rgba(255, 255, 255, 0.6);
     }
   </style>
 </head>
@@ -122,7 +121,7 @@
     <h2>Where We Pop Up 🎪</h2>
     <p>We bring the fizz all around Greensboro & the Triad! Find us at local markets, events, and surprise stops.</p>
 
-    <img src="images/retro-map.png" alt="Illustrated Sodie Pop Map" class="responsive" style="margin: 30px 0;" />
+    <img src="images/retro-map.png" alt="Illustrated Sodie Pop Map" class="responsive" style="margin: 30px auto; max-width: 600px; display: block;" />
 
     <iframe
       src="https://www.google.com/maps/d/u/3/embed?mid=1DJsjs4R5PUovhCdfXiKFFt-NbZ1zAN8&ehbc=2E312F&noprof=1"
@@ -141,7 +140,21 @@
     <!-- ConvertKit Embed -->
     <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
     <form action="https://app.kit.com/forms/8374785/subscriptions" class="seva-form formkit-form" method="post" data-sv-form="8374785" data-uid="74c54f8334" data-format="inline" data-version="5">
-      <!-- Your ConvertKit form fields go here -->
+      <div data-style="clean">
+        <ul class="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul>
+        <div data-element="fields" data-stacked="false" class="seva-fields formkit-fields">
+          <div class="formkit-field">
+            <input class="formkit-input" aria-label="Name:" name="fields[first_name]" placeholder="Name:" type="text" required />
+          </div>
+          <div class="formkit-field">
+            <input class="formkit-input" name="email_address" aria-label="Email Address" placeholder="Email Address" required type="email" />
+          </div>
+          <button data-element="submit" class="formkit-submit formkit-submit">
+            <div class="formkit-spinner"><div></div><div></div><div></div></div>
+            <span class="">Subscribe</span>
+          </button>
+        </div>
+      </div>
     </form>
   </section>
 
@@ -161,7 +174,7 @@
     </script>
   </section>
 
-  <div class="facebook-widget">
+  <div class="facebook-widget" style="border: none; text-align: center;">
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0"></script>
     <div class="fb-page"
