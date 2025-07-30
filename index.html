@@ -84,6 +84,13 @@
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
+    .menu-section, .facebook-widget {
+      background: var(--cream);
+      padding: 40px 20px;
+      margin: 30px auto;
+      border-radius: 20px;
+      border: 6px dotted rgba(255, 255, 255, 0.6);
+    }
   </style>
 </head>
 <body>
@@ -94,6 +101,7 @@
 
   <nav>
     <a href="#about">About</a>
+    <a href="#menu">Fizz Menu</a>
     <a href="#map">Where We Pop Up</a>
     <a href="#signup">Get Alerts</a>
     <a href="#contact">Contact</a>
@@ -102,6 +110,12 @@
   <section id="about">
     <h2>About</h2>
     <p>Sodie Pop is a Greensboro-based fizzy twist on the classics. We bring retro cool back — with a punch of fruity flavor and a whole lotta flair.</p>
+  </section>
+
+  <section id="menu" class="menu-section">
+    <h2>Fizz Menu</h2>
+    <div class="menu-item">Big Pop (24oz) – $6.00</div>
+    <div class="menu-item">Energy Fizz – $8.00</div>
   </section>
 
   <section id="map">
@@ -130,6 +144,37 @@
       <!-- Your ConvertKit form fields go here -->
     </form>
   </section>
+
+  <section id="follow">
+    <h2>Follow Us</h2>
+    <a class="button-link" href="https://www.instagram.com/sodiepopnc" target="_blank">📸 Follow us on Instagram</a>
+    <a class="button-link" href="https://www.facebook.com/sodiepopnc" target="_blank">👍 Visit our Facebook Page</a>
+
+    <div data-behold-id="mC7j1ZPQWtxiDoNKuwtD"></div>
+    <script>
+      (() => {
+        const d = document, s = d.createElement("script");
+        s.type = "module";
+        s.src = "https://w.behold.so/widget.js";
+        d.head.append(s);
+      })();
+    </script>
+  </section>
+
+  <div class="facebook-widget">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0"></script>
+    <div class="fb-page"
+      data-href="https://www.facebook.com/sodiepopnc"
+      data-tabs="timeline"
+      data-width=""
+      data-height="400"
+      data-small-header="false"
+      data-adapt-container-width="true"
+      data-hide-cover="false"
+      data-show-facepile="true">
+    </div>
+  </div>
 
   <section id="contact">
     <h2>Contact</h2>
